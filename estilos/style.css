@@ -84,3 +84,7 @@ button {
     border-radius: 30px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
 }
+
+#phone {
+    display: none;
+}

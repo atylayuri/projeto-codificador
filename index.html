@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
     <script src="app.js"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
             <section class="apresentacao__conteudo">
                 <input type="text" name="txt" id="mensagem" placeholder="Digite aqui"  autocomplete="off">
                     <p>
-                        <img src="imagens/alerta.png" alt="logo de alerta">
+                        <img id="alerta" src="imagens/alerta.png" alt="logo de alerta">
                     </p>
                 <div class="butao">
                     <button id="criptografar__texto" onclick="clicarCriptografar()">Criptografar</button>
@@ -21,7 +22,8 @@
                         </div>
             </section>
                 <div class="receber__mensagem">
-                    <img id="img" src="imagens/msg-nao-encontrada.PNG" alt="imagem de mensagem não encontrada">
+                    <img id="desktop" src="imagens/msg-nao-encontrada.PNG" alt="imagem de mensagem não encontrada">
+                    <img id="phone" src="imagens/cel.png" alt="mensagem não encontrada">
                 </div>
 
         </main>

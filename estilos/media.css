@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Todas as mídias*/
+
+/*Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktops: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mensagem {
+
+        padding: 30px;
+        margin-bottom: 10px;
+        width: 300px;
+        border: none;
+        color: var(--cor03);
+        background-color: var(--cor01);
+        font-size: 32px;
+        outline: none;
+    }
+
+    
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    text-align: center;
+    
+}
+
+#criptografar__texto {
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid darkblue;
+    background-color: var(--cor03);
+    color: white;
+    font-size: 20px;
+}
+
+#descriptografar__texto {
+    background-color: var(--cor04);
+    color: var(--cor03);
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid var(--cor03);
+    font-size: 20px;
+
+}
+
+#alerta {
+    width: 220px;
+}
+
+.receber__mensagem {
+    display: flex;
+    justify-content: center;
+    width: 327px;
+    background-color: var(--cor02);
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
+}
+
+#desktop {
+    display: none;
+}
+
+#phone {
+    display: flex;
+    width: 263px;
+}
+
+}
+
