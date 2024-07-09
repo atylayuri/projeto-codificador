@@ -34,6 +34,17 @@ p {
     margin-bottom: 10px;
 }
 
+#alerta {
+    display: flex;
+    
+}
+
+#img-alert {
+    padding-bottom: 15px;
+    width: 200px;
+}
+
+
 #mensagem {
     padding: 30px;
     margin-bottom: 340px;
@@ -51,6 +62,7 @@ p {
 
 
 button {
+    margin: auto;
     width: 250px;
     text-align: center;
     
@@ -76,15 +88,33 @@ button {
 
 }
 
-.receber__mensagem {
-    display: flex;
-    justify-content: center;
+#img-msg-nao-encontrada__desktop {
+    background-color: white;
+    margin-left: 15%;
     width: 400px;
-    background-color: var(--cor02);
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
+    height: 540px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
 }
 
-#phone {
+#texto__msg__nao__encontrada {
     display: none;
 }
+
+#desktop__txt1 {
+    margin: auto;
+    margin-top: 33 px;
+    margin-bottom: 16px;
+    width: 250px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#desktop__txt2 {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+

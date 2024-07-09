@@ -10,24 +10,34 @@
 </head>
 <body>
         <main class="apresentacao">
-            <section class="apresentacao__conteudo">
-                <input type="text" name="txt" id="mensagem" placeholder="Digite aqui"  autocomplete="off">
-                    <p>
-                        <img id="alerta" src="imagens/alerta.png" alt="logo de alerta">
-                    </p>
-                <div class="butao">
-                    <button id="criptografar__texto" onclick="clicarCriptografar()">Criptografar</button>
-                    <button id="descriptografar__texto" onclick="cliclarDescriptografar()">Descriptografar
-                    </button>
-                        </div>
-            </section>
+            <div>
+                <section class="apresentacao__conteudo">
+                    <input type="text" name="txt" id="mensagem" placeholder="Digite aqui"  autocomplete="off">
+                       <div id="alerta">
+                        <img id="img-alert" src="imagens/img-alert.png" alt="Imagem de alerta">
+                       </div>
+                    <div class="butao">
+                        <button id="criptografar__texto" onclick="clicarCriptografar()">Criptografar</button>
+                        <button id="descriptografar__texto" onclick="cliclarDescriptografar()">Descriptografar
+                        </button>
+                            </div>
+                </section>
+            </div>
                 <div class="receber__mensagem">
-                    <img id="desktop" src="imagens/msg-nao-encontrada.PNG" alt="imagem de mensagem não encontrada">
-                    <p id="phone__txt1">Nemhuma mensagem encaontrada</p>
-                    <p>Digite um texto que você deseja criptografar ou descd</p>
+                    <div id="img-msg-nao-encontrada__desktop">
+                        <img id="desktop" src="imagens/img-msg-nao-encontrada.png" alt="imagem de mensagem não encontrada">
+                        <p id="desktop__txt1">Nenhuma mensagem encaontrada</p>
+                        <p id="desktop__txt2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                    <div id="texto__msg__nao__encontrada">
+                        <p id="phone__txt1">Nenhuma mensagem encaontrada</p>
+                        <p id="phone__txt2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
                 </div>
 
         </main>
-
+        <footer>
+            <p>Feito por Atyla com muita dedicaçao</p>
+        </footer>
 </body>
 </html>
