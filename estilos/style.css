@@ -118,3 +118,7 @@ button {
     text-align: center;
 }
 
+#rodape {
+    text-align: center;
+    color: var(--cor03);
+}

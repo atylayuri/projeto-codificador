@@ -26,7 +26,7 @@ Grandes telas: acima de 1200px
     #mensagem {
 
         padding: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 285px;
         width: 300px;
         border: none;
         color: var(--cor03);
@@ -60,7 +60,6 @@ button {
     justify-content: center;
     background-color: var(--cor04);
     color: var(--cor03);
-    margin-bottom: 60px;
     height: 45px;
     border-radius: 20px;
     border: 1px solid var(--cor03);
@@ -75,7 +74,7 @@ button {
 
 #img-alert {
     margin-left: 8px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 #img-msg-nao-encontrada__desktop {
@@ -88,13 +87,13 @@ button {
 
 #texto__msg__nao__encontrada {
     display: flex;
+    background-color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 327px;
     height: 186px;
     border-radius: 20px;
-    background-color: white;
 }
 
 #phone__txt1 {
