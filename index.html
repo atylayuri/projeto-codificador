@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media.css">
-    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="https://www.alura.com.br/assets/favicon.1720710817.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <main class="apresentacao">
-            <div>
-                <section class="apresentacao__conteudo">
-                    <input type="text" name="txt" id="mensagem" placeholder="Digite aqui"  autocomplete="off">
-                       <div id="alerta">
-                        <img id="img-alert" src="imagens/img-alert.png" alt="Imagem de alerta">
-                       </div>
-                    <div class="butao">
-                        <button id="criptografar__texto" onclick="clicarCriptografar()">Criptografar</button>
-                        <button id="descriptografar__texto" onclick="cliclarDescriptografar()">Descriptografar
-                        </button>
-                            </div>
-                </section>
-            </div>
-                <div class="receber__mensagem">
-                    <div id="img-msg-nao-encontrada__desktop">
-                        <img id="desktop" src="imagens/img-msg-nao-encontrada.png" alt="imagem de mensagem não encontrada">
-                        <p id="desktop__txt1">Nenhuma mensagem encaontrada</p>
-                        <p id="desktop__txt2">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    </div>
-                    <div id="texto__msg__nao__encontrada">
-                        <p id="phone__txt1">Nenhuma mensagem encaontrada</p>
-                        <p id="phone__txt2">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    </div>
-                </div>
+    <main>
+        <header>
+            <img class="logoAlura" src="imagens/logo-alura.png" alt="logo alura">
+        </header>
+        
+        <section class="criptografia">
+            <textarea class="text-area" cols="41" rows="4" id="textoDescriptografado" placeholder="Digite seu texto"></textarea>
 
-        </main>
-        <footer>
-            <p id="rodape">Feito por <a href="https://github.com/atylayuri">Atyla Yuri</a></p>
-        </footer>
+            <div class="aviso">
+                <img src="imagens/img-alerta.png" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="bloco-tradutor">
+            <div id="semMensagem">
+                <img src="imagens/img-msg-nao-encontrada.png" alt="imagem nenhuma mensagem encontrada">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div id="textoTradutor" style="display: none;">
+                <div class="mensagem"></div>
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+            <div class="credits">Criado por <a href="" target="_blank">Atyla</a></div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
